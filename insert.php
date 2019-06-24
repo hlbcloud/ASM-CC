@@ -68,8 +68,8 @@
         echo "ERROR: Could not connect Database";
       }
 
-      $sql = "INSERT INTO managestore(storeid, accountant, revenue)"
-      . " VALUES('$_POST[storeid]','$_POST[accountant]','$_POST[revenue]')";
+      $sql = "INSERT INTO asm2(toyid, toyname, price)"
+      . " VALUES('$_POST[toyid]','$_POST[toyname]','$_POST[price]')";
       $stmt = $pdo->prepare($sql);
 
         if (is_null($_POST[storeid])) {
