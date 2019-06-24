@@ -48,8 +48,8 @@
         echo getenv("dbname");
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-174-129-242-183.compute-1.amazonaws.com;port=5432;user=qkxfwavulqlxvt;password=
-  ea8f38ba555d8e3653c01373023997d24aa21921ec7e81c6301a42bdcfbd0613;dbname=dcg52sr0hlvenk",
+        "host=ec2-23-21-91-183.compute-1.amazonaws.com;port=5432;user=ekqttaatlknfct;password=
+        a829f93c09e957150aef915e6c0e310e9581378fe7e96afeac91def1fa1c5dd8;dbname=d5nvtpltgjl5en",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -58,7 +58,7 @@
         ));
       }  
 
-      $sql = "SELECT * FROM managestore ORDER BY storeid";
+      $sql = "SELECT * FROM asm2 ORDER BY toyid";
       $stmt = $pdo->prepare($sql);
       $stmt->setFetchMode(PDO::FETCH_ASSOC);
       $stmt->execute();
@@ -82,10 +82,10 @@
           ?>
 
           <tr>
-            <td scope="row"><?php echo $row['storeid'] ?></td>
-            <td><?php echo $row['accountant'] ?></td>
-            <td><?php echo $row['revenue'] ?></td>
-            <td><?php echo $row['timecheck'] ?></td>
+            <td scope="row"><?php echo $row['toyname'] ?></td>
+            <td><?php echo $row['toyid'] ?></td>
+            <td><?php echo $row['price'] ?></td>
+            <td><?php echo $row['date'] ?></td>
           </tr>
 
           <?php
