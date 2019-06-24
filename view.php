@@ -82,8 +82,8 @@
           ?>
 
           <tr>
-            <td scope="row"><?php echo $row['toyname'] ?></td>
-            <td><?php echo $row['toyid'] ?></td>
+            <td scope="row"><?php echo $row['toyid'] ?></td>
+            <td><?php echo $row['toyname'] ?></td>
             <td><?php echo $row['price'] ?></td>
             <td><?php echo $row['date'] ?></td>
           </tr>
