@@ -27,7 +27,7 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="image/toy.jpeg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="image/toy.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
 
 
