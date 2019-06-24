@@ -69,10 +69,10 @@
       <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable" border="1">
         <thead>
           <tr>
-            <th>Store ID</th>
-            <th>Accountant</th>
+            <th>Toy ID</th>
+            <th>Toy Name</th>
             <th>Revenue</th>
-            <th>Last Time Check</th>
+            <th>Date</th>
           </tr>
         </thead>
         <tbody>

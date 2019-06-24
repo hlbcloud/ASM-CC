@@ -36,9 +36,9 @@
 		    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Update</h3>
 		    <p>Update Store</p>
 		    <form name="UpdateData" action="update.php" method="POST">
-		      <input class="w3-input w3-border" type="text" placeholder="Store ID:" required="" name="storeid">
-          <input class="w3-input w3-section w3-border" type="text" placeholder="Accountant:" required="" name="accountant">
-          <input class="w3-input w3-section w3-border" type="text" placeholder="Revenue:" required="" name="revenue">
+		      <input class="w3-input w3-border" type="text" placeholder="Toy ID:" required="" name="toyid">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Toy Name:" required="" name="toyname">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Revenue:" required="" name="price">
           
           <button class="w3-button w3-black w3-section" type="submit">
             <i class="fa fa-paper-plane"></i> Update
@@ -66,9 +66,9 @@
         ));
       }  
 
-      $sql = "UPDATE managestore SET accountant = '$_POST[accountant]', revenue = '$_POST[revenue]' WHERE storeid = '$_POST[storeid]'";
+      $sql = "UPDATE asm2 SET toyname = '$_POST[toyname]', price = '$_POST[price]' WHERE toyid = '$_POST[toyid]'";
       $stmt = $pdo->prepare($sql);
-      if(is_null($_POST[accountant]) == FALSE){
+      if(is_null($_POST[toyid]) == FALSE){
         if($stmt->execute() == TRUE){
           echo "Record updated successfully.";
         }
