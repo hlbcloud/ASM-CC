@@ -36,9 +36,9 @@
 		    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Insert</h3>
 		    <p>Insert information</p>
 		    <form name="InsertData" action="insert.php" method="POST" >
-		      <input class="w3-input w3-border" type="text" placeholder="Store ID:" required="" name="storeid">
-		      <input class="w3-input w3-section w3-border" type="text" placeholder="Accountant:" required="" name="accountant">
-		      <input class="w3-input w3-section w3-border" type="text" placeholder="Revenue:" required="" name="revenue">
+		      <input class="w3-input w3-border" type="text" placeholder="Store ID:" required="" name="toyid">
+		      <input class="w3-input w3-section w3-border" type="text" placeholder="Accountant:" required="" name="toyname">
+		      <input class="w3-input w3-section w3-border" type="text" placeholder="Revenue:" required="" name="price">
 		      
 		      <button class="w3-button w3-black w3-section" type="submit">
 		        <i class="fa fa-paper-plane"></i> Insert
@@ -72,7 +72,7 @@
       . " VALUES('$_POST[toyid]','$_POST[toyname]','$_POST[price]')";
       $stmt = $pdo->prepare($sql);
 
-        if (is_null($_POST[storeid])) {
+        if (is_null($_POST[toyid])) {
           echo "Store ID must be not null";
         }
         else{
