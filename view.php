@@ -16,7 +16,7 @@
     <a href="index.php" class="w3-bar-item w3-button"><b>ATN</b> Toy Store</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="home.php" class="w3-bar-item w3-button">Home</a>
+      <a href="home.php" class="w3-bar-item w3-button">Home page</a>
       <a href="view.php" class="w3-bar-item w3-button">View</a>
       <a href="insert.php" class="w3-bar-item w3-button">Insert</a>
       <a href="update.php" class="w3-bar-item w3-button">Update</a>
